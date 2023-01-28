@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="logic.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo&display=swap"
+      rel="stylesheet"
+    />
+    <title>Encriptador</title>
+  </head>
+  <body>
+    <header>
+      <img src="images/Logo.png" alt="logo de Alura" class="logo" />
+    </header>
+    <main>
+      <section>
+            <textarea
+            id="text-area"
+            cols="30"
+            rows="10"
+            placeholder="Ingrese el texto aqui"
+            ></textarea>
+            <div>
+                <h5 class="informacion">
+                    <img src="images/Vector.png" alt="" /> Solo minusculas y sin acentos
+                </h5>
+            </div>
+            <div class="botones">
+                <input
+                    type="button"
+                    class="btn-encriptar"
+                    onclick="encriptText()"
+                    value="Encriptar"
+                />
+                <input
+                    type="button"
+                    class="btn-desencriptar"
+                    onclick="descencriptText()"
+                    value="Descencriptar"
+                />
+            </div>
+      </section>
+
+      <section>
+            <div class="mensaje">
+                <img id="muneco" src="images/Muñeco.png" alt="imagen del muneco" />
+                <h6 id="h6">Ningún mensaje fue encontrado</h6>
+                <textarea
+                    id="text-area2"
+                    cols="10"
+                    rows="5"
+                    placeholder="Ingresa el texto que desees encriptar o desencriptar."
+                ></textarea>
+                <input
+                    type="button"
+                    class="btn-copiar"
+                    onclick="copyText()"
+                    value="Copiar"
+                />
+            </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy;2023 Copyright. Author: Diego Romero.</p>
+    </footer>
+  </body>
+</html>
